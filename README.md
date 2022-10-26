@@ -1,37 +1,13 @@
 # Artificial-Neural-Network
-This is a reupload of a project I did for my AI Methods module at university. This was implemented in Python. This was done quite a long time ago so I don't remember an awful lot of it, so I included the coursework spec as a reminder.
+This is a reupload of a project I did for my AI Methods module at university. This was implemented in Python without using any libraries, except for pandas to read excel spreadsheets.
 
-The coursework spec is as follows:
+This is an implementation of an Artificial Neural Network, more specifically a multi-layer perceptron trained using the error backpropogation algorithm.
 
-You are to implement, in a programming language of your choice, an artificial neural 
-network – specifically a multi-layer perceptron (MLP) trained using the error 
-backpropagation algorithm. 
+The ANN takes various data related to weather conditions and uses it to predict the level of pan evaporation. The code is designed to train, validate and test the ANN. It also can train the network using improved methods, such as momentum, bold driver and simulated annealing
 
-Once implemented you are to train your network on the data 
-set provided and evaluate its performance. Note – you should NOT use numerical 
-computing environments (such as MATLAB) or pre-written neural network libraries. Typical 
-languages you could use would be Python, Java, C#, C++, C.
+The performance of the ANN was measured using the Root Mean Squared Error after a certain number of epochs, with a lower error indicating higher accuracy. The RMSE improved from 0.02 to 0.014 at 1000 and 5000 epochs, respectively. The improved training methods also improved performance by a small amount.
 
-There are a number of stages to this process that will be evaluated: 
+The ANN had significantly better performance than LINEST, a data driven model used as a comparison, which had a RMSE of 0.256.
 
-1) Implementation of the algorithm in an appropriate language; 
+Overall a pretty good attempt at making a nerual network and quite a fun challenge
 
-2) Documentation and commenting of this implementation; 
-
-3) Appropriate data pre-processing of the supplied data set; 
-
-4) Appropriate training, configuration and weight adjustment of the ANN model; 
-
-5) Appropriate evaluation of the chosen ANN structure; 
-
-6) A report detailing the above process and discussing the evaluation of the model. 
-
-For additional marks you should contrast your ANN model with a simple data driven model 
-such as a simple multiple linear regression model (for example, see LINEST in Excel). You 
-should also try different ‘improvements’ to the standard backpropagation algorithm and 
-report on these – for example, momentum, annealing, etc. 
-The data set will be provided as an Excel file consisting of N columns. The first N-1 
-columns are the predictors; the Nth column represents the predictand. You should process 
-these data appropriately. This involves cleaning the data, selecting a way to split the data 
-into appropriate subsets, selecting predictands, and standardising the data to an 
-appropriate range. 
